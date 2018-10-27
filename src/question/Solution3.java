@@ -1,7 +1,5 @@
 package question;
 
-import java.util.HashMap;
-
 /**
  * Created by jihun on 2018. 10. 27..
  */
@@ -36,7 +34,7 @@ public class Solution3 {
         for (int k = 1; k <= arr.length; k++) {
             for (int i = 0; i <= arr.length - k; i++) {
                 int sum = 0;
-                if (array[i + idx][i+k-1 + idx] != 0) sum = array[i][i+k-1];
+                if (array[i + idx][i+k-1 + idx] != 0) sum = array[i + idx][i+k-1 + idx];
                 else {
                     for (int j = 0; j < k; j++)
                         sum += arr[i + j];
